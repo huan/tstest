@@ -5,7 +5,7 @@ Helps you write better TypeScript programs
 
 PLEASE COME BACK AFTER 4 WEEKS...
 
-![tstest](https://zixia.github.com/tstest/images/tstest-logo.png)
+[![tstest](https://zixia.github.com/tstest/images/tstest-logo.png)](https://github.com/zixia/tstest)
 
 tstest is a mature full-featured TypeScript testing tool that helps you write better programs.
 
@@ -27,6 +27,10 @@ Thanks to David Auffret who owned the `tstest` name of NPM module. He is so kind
 ```
 $ npm deprecate tstest@0.0 'tstest had been republished as a test framework from v0.1'
 ```
+
+## Inspired By
+
+This module is highly inspired by [pytest](https://pytest.org/)
 
 # AUTHOR
 
