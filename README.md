@@ -5,6 +5,8 @@ Helps you write better TypeScript programs
 
 PLEASE COME BACK AFTER 4 WEEKS...
 
+![tstest](https://zixia.github.com/tstest/images/tstest-logo.png)
+
 tstest is a mature full-featured TypeScript testing tool that helps you write better programs.
 
 The tstest framework makes it easy to write small tests, yet scales to support complex functional testing for applications and libraries.
