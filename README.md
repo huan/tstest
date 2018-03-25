@@ -19,6 +19,10 @@ The tstest framework makes it easy to write small tests, yet scales to support c
 1. Can run unittest (including trial) and nose test suites out of the box;
 1. JavaScript, TypeScript, Google Apps Script (untested);
 1. Rich plugin architecture, with over n+ external plugins and thriving community;
+1. Out-of-the-Box Dual Browser/Node.js environment testing support;
+# SEE ALSO
+
+This module is highly inspired by [pytest](https://pytest.org/)
 
 # THANKS
 
@@ -27,10 +31,6 @@ Thanks to David Auffret who owned the `tstest` name of NPM module. He is so kind
 ```
 $ npm deprecate tstest@0.0 'tstest had been republished as a test framework from v0.1'
 ```
-
-## Inspired By
-
-This module is highly inspired by [pytest](https://pytest.org/)
 
 # AUTHOR
 
