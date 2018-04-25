@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "es6"
+    , "module": "commonjs"
+    , "outDir": "dist"
+    , "declaration": true
+    , "sourceMap": true
+    , "noLib": false
+
+    , "noEmitOnError": true
+    , "noUnusedLocals": true
+    , "noImplicitReturns": true
+    , "noFallthroughCasesInSwitch": true
+    , "strictNullChecks": true
+    , "experimentalDecorators": true
+    , "emitDecoratorMetadata": true
+    , "noImplicitAny": true
+    , "noUnusedParameters": true
+    , "noImplicitThis": true
+
+    , "traceResolution": false
+    , "lib": [
+        "esnext"
+      , "dom"
+    ]
+  }
+  , "exclude": [
+      "node_modules/"
+    , "dist/"
+  ]
+  , "include": [
+       "bin/*.ts"
+     , "scripts/**/*.ts"
+     , "examples/**/*.ts"
+     , "src/**/*.ts"
+     , "tests/**/*.spec.ts"
+  ]
+}
