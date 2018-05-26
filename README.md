@@ -30,6 +30,10 @@ This module is highly inspired by [pytest](https://pytest.org/)
 * [Javascript Decorators](https://github.com/wycats/javascript-decorators)
 * [Decorators with TypeScript](https://codingblast.com/decorators-intro/)
 
+### Other Tools
+
+* [Testing: tape vs. tap](https://remysharp.com/2016/02/08/testing-tape-vs-tap)
+
 ## CHANGELOG
 
 ### v0.1 (master) March 21, 2018
