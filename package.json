@@ -1,6 +1,6 @@
 {
   "name": "tstest",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Helps you write better TypeScript programs",
   "main": "index.js",
   "scripts": {
