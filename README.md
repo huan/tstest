@@ -19,6 +19,41 @@ The tstest framework makes it easy to write small tests, yet scales to support c
 1. Can run unittest (including trial) and nose test suites out of the box;
 1. JavaScript, TypeScript, Google Apps Script (untested);
 1. Rich plugin architecture, with over n+ external plugins and thriving community;
+1. Out-of-the-Box Dual Browser/Node.js environment testing support;
+
+This module is highly inspired by [pytest](https://pytest.org/)
+
+## SEE ALSO
+
+* [Testing Python Applications with Pytest](https://semaphoreci.com/community/tutorials/testing-python-applications-with-pytest)
+* [Typescript Dependency Injection and Decorators](http://source.coveo.com/2016/02/04/typescript-injection-decorator/)
+* [Decorators with TypeScript](https://codingblast.com/decorators-intro/)
+
+### Decorators
+
+* [TypeScript > Decorators #2249](https://github.com/Microsoft/TypeScript/issues/2249)
+* [error TS1206: Decorators are not valid here? #3661](https://github.com/Microsoft/TypeScript/issues/3661)
+* [TypeScript-Handbook > Decorators](https://github.com/Microsoft/TypeScript-Handbook/blob/master/pages/Decorators.md)
+* [Prototype for a Metadata Reflection API for ECMAScript](https://github.com/rbuckton/reflect-metadata)
+* [Function Expression Decorators (ECMA-262 Proposal)](https://docs.google.com/document/d/1ikxIP5-RVYq6d_f8lAvf3pKC00W78ueyp-xIZ6q67uU/edit#)
+* [Javascript Decorators](https://github.com/wycats/javascript-decorators)
+
+### AST
+
+#### Online Tools
+
+* [AST Online Explorer](https://astexplorer.net/)
+* [TypeScript AST Viewer Online](https://ts-ast-viewer.com/)
+
+#### Articles & Projects
+
+* [TypeScript > Using the Compiler API](https://github.com/Microsoft/TypeScript/wiki/Using-the-Compiler-API)
+* [TypeScript Compiler Internals · TypeScript Deep Dive](https://basarat.gitbooks.io/typescript/docs/compiler/overview.html)
+* [TypeScript Compiler API wrapper for static analysis and code manipulation](https://github.com/dsherret/ts-simple-ast)
+
+### Other Tools
+
+* [Testing: tape vs. tap](https://remysharp.com/2016/02/08/testing-tape-vs-tap)
 
 ## CHANGELOG
 
@@ -37,36 +72,6 @@ $ npm deprecate tstest@0.0 'tstest had been republished as a test framework from
 ...
 
 ```
-
-## Inspired By
-
-This module is highly inspired by [pytest](https://pytest.org/)
-
-## SEE ALSO
-
-* [Testing Python Applications with Pytest](https://semaphoreci.com/community/tutorials/testing-python-applications-with-pytest)
-
-### Decorators
-
-* [TypeScript > Decorators #2249](https://github.com/Microsoft/TypeScript/issues/2249)
-* [error TS1206: Decorators are not valid here? #3661](https://github.com/Microsoft/TypeScript/issues/3661)
-* [TypeScript-Handbook > Decorators](https://github.com/Microsoft/TypeScript-Handbook/blob/master/pages/Decorators.md)
-* [Prototype for a Metadata Reflection API for ECMAScript](https://github.com/rbuckton/reflect-metadata)
-* [Function Expression Decorators (ECMA-262 Proposal)](https://docs.google.com/document/d/1ikxIP5-RVYq6d_f8lAvf3pKC00W78ueyp-xIZ6q67uU/edit#)
-* [javascript-decorators](https://github.com/wycats/javascript-decorators)
-
-### AST
-
-#### Online Tools
-
-* [AST Online Explorer](https://astexplorer.net/)
-* [TypeScript AST Viewer Online](https://ts-ast-viewer.com/)
-
-#### Articles & Projects
-
-* [TypeScript > Using the Compiler API](https://github.com/Microsoft/TypeScript/wiki/Using-the-Compiler-API)
-* [TypeScript Compiler Internals · TypeScript Deep Dive](https://basarat.gitbooks.io/typescript/docs/compiler/overview.html)
-* [TypeScript Compiler API wrapper for static analysis and code manipulation](https://github.com/dsherret/ts-simple-ast)
 
 ## AUTHOR
 
