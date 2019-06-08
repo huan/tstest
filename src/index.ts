@@ -1,0 +1,1 @@
+export { TsTest } from './tstest'

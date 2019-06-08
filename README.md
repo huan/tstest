@@ -1,9 +1,12 @@
 # TSTEST
+
+[![NPM Version](https://badge.fury.io/js/tstest.svg)](https://www.npmjs.com/package/tstest)
+[![npm (tag)](https://img.shields.io/npm/v/tstest/next.svg)](https://www.npmjs.com/package/tstest?activeTab=versions)
+[![Build Status](https://api.travis-ci.com/huan/tstest.svg?branch=master)](https://travis-ci.com/huan/tstest)
+[![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-blue.svg)](https://www.typescriptlang.org/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/huan/tstest.svg)](https://greenkeeper.io/)
+
 Helps you write better TypeScript programs
-
-## WIP: WORKING IN PROGRESS...
-
-PLEASE COME BACK AFTER 4 WEEKS...
 
 [![tstest](https://huan.github.io/tstest/images/tstest-logo.png)](https://github.com/huan/tstest)
 
@@ -57,7 +60,15 @@ This module is highly inspired by [pytest](https://pytest.org/)
 
 ## CHANGELOG
 
-### v0.1 (master) March 21, 2018
+### v0.3 master
+
+1. WIP...
+
+### v0.2 June 07, 2019
+
+1. Publish as a `blue-tap` & `@types/blue-tap` shortcut installer.
+
+### v0.1 March 21, 2018
 
 1. Received the NPM package name: **tstest** from David Auffret.
 1. Scratched a tstest logo.
@@ -67,7 +78,7 @@ This module is highly inspired by [pytest](https://pytest.org/)
 
 Thanks to David Auffret who owned the `tstest` name of NPM module. He is so kind and nice that passed this name over to me with the help of support from NPM after my request.
 
-```
+```shell
 $ npm deprecate tstest@0.0 'tstest had been republished as a test framework from v0.1'
 ...
 
@@ -75,14 +86,12 @@ $ npm deprecate tstest@0.0 'tstest had been republished as a test framework from
 
 ## AUTHOR
 
-Huan LI \<zixia@zixia.net\> (http://linkedin.com/in/zixia)
+[Huan LI (李卓桓)](http://linkedin.com/in/zixia) zixia@zixia.net
 
-<a href="http://stackoverflow.com/users/1123955/zixia">
-  <img src="http://stackoverflow.com/users/flair/1123955.png" width="208" height="58" alt="profile for zixia at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for zixia at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
-</a>
+[![Profile of Huan LI (李卓桓) on StackOverflow](https://stackexchange.com/users/flair/265499.png)](https://stackexchange.com/users/265499)
 
 ## COPYRIGHT & LICENSE
 
-* Code & Docs © 2018 Huan LI \<zixia@zixia.net\>
-* Code released under the Apache-2.0 License
-* Docs released under Creative Commons
+- Code & Docs © 2019 - now Huan LI zixia@zixia.net
+- Code released under the Apache-2.0 License
+- Docs released under Creative Commons
