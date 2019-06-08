@@ -1,6 +1,8 @@
 export { TsTest } from './tstest'
 
+import test from 'blue-tape'
+
+export default test
 export {
-  default,
-  default as test,
-}                   from 'blue-tape'
+  test,
+}
