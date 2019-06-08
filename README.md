@@ -16,6 +16,10 @@ The tstest framework makes it easy to write small tests, yet scales to support c
 
 ## Features
 
+NOTICE: All the features listed below, is NOT YET IMPLENMENTED.
+
+TO DO:
+
 1. Detailed info on failing assert statements (no need to remember self.assert* names);
 1. Auto-discovery of test modules and functions;
 1. Modular fixtures for managing small or parametrized long-lived test resources;
@@ -66,7 +70,7 @@ This module is highly inspired by [pytest](https://pytest.org/)
 
 ### v0.2 June 07, 2019
 
-1. Publish as a `blue-tap` & `@types/blue-tap` shortcut installer.
+1. Publish as a `blue-tap` & `@types/blue-tap` wrapper for convenience.
 
 ### v0.1 March 21, 2018
 
