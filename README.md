@@ -64,11 +64,11 @@ This module is highly inspired by [pytest](https://pytest.org/)
 
 ## CHANGELOG
 
-### v0.3 master
+### master
 
 1. WIP...
 
-### v0.2 June 07, 2019
+### v0.4 June 07, 2019
 
 1. Publish as a `blue-tap` & `@types/blue-tap` wrapper for convenience.
 
