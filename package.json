@@ -1,15 +1,23 @@
 {
   "name": "tstest",
-  "version": "0.1.7",
-  "description": "Helps you write better TypeScript programs",
-  "main": "index.js",
+  "version": "0.4.1",
+  "description": "Testing Utilities for Helping You to Write Better TypeScript Programs",
+  "main": "dist/src/index.js",
+  "typings": "dist/src/index.d.ts",
   "scripts": {
-    "lint": "echo lint",
-    "test": "echo test"
+    "build": "tsc",
+    "clean": "shx rm -fr dist/*",
+    "dist": "npm run clean && npm run build",
+    "pack": "npm pack",
+    "lint": "npm run lint:es && npm run lint:ts",
+    "lint:es": "eslint src/**/*.ts tests/**/*.ts --ignore-pattern \"*fixtures/*.ts\" --ignore-pattern fixtures",
+    "lint:ts": "tsc --noEmit",
+    "test:pack": "bash -x scripts/npm-pack-testing.sh",
+    "test": "blue-tape -r ts-node/register \"src/**/*.spec.ts\" \"src/*.spec.ts\" \"tests/*.spec.ts\" \"tests/**/*.spec.ts\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zixia/tstest.git"
+    "url": "git+https://github.com/huan/tstest.git"
   },
   "keywords": [
     "typescript",
@@ -20,15 +28,29 @@
   "author": "Huan LI <zixia@zixia.net>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/zixia/tstest/issues"
+    "url": "https://github.com/huan/tstest/issues"
   },
-  "homepage": "https://github.com/zixia/tstest#readme",
+  "homepage": "https://github.com/huan/tstest#readme",
   "devDependencies": {
-    "git-scripts": "^0.2.1"
+    "@chatie/eslint-config": "^0.2.4",
+    "@chatie/tsconfig": "^0.4.4",
+    "@types/node": "^10.0.8",
+    "@types/semver": "^6.0.0",
+    "git-scripts": "^0.2.1",
+    "read-pkg-up": "^6.0.0",
+    "semver": "^6.1.1",
+    "shx": "^0.3.2"
   },
   "git": {
     "scripts": {
       "pre-push": "./scripts/pre-push.sh"
     }
+  },
+  "dependencies": {
+    "@types/blue-tape": "^0.1.33",
+    "@types/sinon": "^7.0.13",
+    "blue-tape": "^1.0.0",
+    "reflect-metadata": "^0.1.12",
+    "sinon": "^7.3.2"
   }
 }

@@ -1,1 +1,1 @@
-[![tstest](https://zixia.github.com/tstest/images/tstest-logo.png)](https://github.com/zixia/tstest)
+[![tstest](https://zixia.github.com/tstest/images/tstest-logo.png)](https://github.com/huan/tstest)
