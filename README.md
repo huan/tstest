@@ -71,12 +71,12 @@ This module is highly inspired by [pytest](https://pytest.org/)
 ### v0.4 June 07, 2019
 
 1. Publish as a testing toolset wrapper for convenience:
-  1. `blue-tap`
-  1. `sinon`
-  1. `sinon-test`
-  1. `@types/blue-tap` 
-  1. `@types/sinon`
-  1. `@types/sinon-test`
+    1. `blue-tap`
+    1. `sinon`
+    1. `sinon-test`
+    1. `@types/blue-tap` 
+    1. `@types/sinon`
+    1. `@types/sinon-test`
 
 ### v0.1 March 21, 2018
 
