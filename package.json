@@ -51,7 +51,6 @@
     "@types/sinon": "^7.0.13",
     "@types/sinon-test": "^2.4.0",
     "blue-tape": "^1.0.0",
-    "markdownlint-cli": "^0.16.0",
     "reflect-metadata": "^0.1.12",
     "sinon": "^7.3.2",
     "sinon-test": "^2.4.0"
