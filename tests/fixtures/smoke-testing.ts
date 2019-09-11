@@ -1,7 +1,10 @@
 #!/usr/bin/env ts-node
 
-import test from 'tstest'
+import {
+  test,
+  VERSION,
+}           from 'tstest'
 
-test('test', async t => {
-  t.pass('smoking test passed')
+test('VERSION', async t => {
+  t.notEqual(VERSION, '0.0.0', 'should set version to the actual number')
 })
