@@ -22,4 +22,8 @@
   , "tslint.autoFixOnSave": false
   , "editor.formatOnSave": false
   , "typescript.extension.sortImports.sortOnSave": false
+  , "eslint.validate": [
+    "javascript",
+    "typescript",
+  ],
 }
