@@ -46,7 +46,7 @@
     "@types/sinon-test": "^2.4.0",
     "blue-tape": "^1.0.0",
     "reflect-metadata": "^0.1.12",
-    "sinon": "^7.3.2",
+    "sinon": "^8.0.0",
     "sinon-test": "^2.4.0"
   },
   "git": {
