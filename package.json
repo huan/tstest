@@ -47,7 +47,7 @@
     "blue-tape": "^1.0.0",
     "reflect-metadata": "^0.1.12",
     "sinon": "^9.0.0",
-    "sinon-test": "^2.4.0"
+    "sinon-test": "^3.0.0"
   },
   "git": {
     "scripts": {
