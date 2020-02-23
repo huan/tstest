@@ -35,19 +35,19 @@
     "@chatie/eslint-config": "^0.8.1",
     "@chatie/git-scripts": "^0.2.5",
     "@chatie/semver": "^0.4.7",
-    "@chatie/tsconfig": "^0.6.1",
+    "@chatie/tsconfig": "^0.8.0",
     "pkg-jq": "^0.2.4",
-    "read-pkg-up": "^6.0.0",
+    "read-pkg-up": "^7.0.1",
     "shx": "^0.3.2"
   },
   "dependencies": {
     "@types/blue-tape": "^0.1.33",
-    "@types/sinon": "^7.0.13",
+    "@types/sinon": "^7.5.1",
     "@types/sinon-test": "^2.4.0",
     "blue-tape": "^1.0.0",
-    "reflect-metadata": "^0.1.12",
-    "sinon": "^7.3.2",
-    "sinon-test": "^2.4.0"
+    "reflect-metadata": "^0.1.13",
+    "sinon": "^9.0.0",
+    "sinon-test": "^3.0.0"
   },
   "git": {
     "scripts": {
