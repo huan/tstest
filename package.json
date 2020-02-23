@@ -36,7 +36,6 @@
     "@chatie/git-scripts": "^0.2.5",
     "@chatie/semver": "^0.4.7",
     "@chatie/tsconfig": "^0.8.0",
-    "pkg-jq": "^0.2.4",
     "read-pkg-up": "^7.0.1",
     "shx": "^0.3.2"
   },
