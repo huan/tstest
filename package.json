@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "@types/blue-tape": "^0.1.33",
-    "@types/sinon": "^9.0.0",
+    "@types/sinon": "^10.0.1",
     "@types/sinon-test": "^2.4.0",
     "blue-tape": "^1.0.0",
     "reflect-metadata": "^0.1.13",
