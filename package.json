@@ -1,9 +1,9 @@
 {
   "name": "tstest",
-  "version": "0.4.10",
+  "version": "0.5.0",
   "description": "Testing Utilities for Helping You to Write Better TypeScript Programs",
-  "main": "dist/src/index.js",
-  "typings": "dist/src/index.d.ts",
+  "main": "dist/src/mod.js",
+  "typings": "dist/src/mod.d.ts",
   "scripts": {
     "build": "tsc",
     "clean": "shx rm -fr dist/*",
@@ -13,7 +13,7 @@
     "lint:es": "eslint --ignore-pattern tests/fixtures/ '{bin,examples,scripts,src,tests}/**/*.ts'",
     "lint:ts": "tsc --noEmit",
     "test:pack": "bash -x scripts/npm-pack-testing.sh",
-    "test": "blue-tape -r ts-node/register \"src/**/*.spec.ts\" \"src/*.spec.ts\" \"tests/*.spec.ts\" \"tests/**/*.spec.ts\""
+    "test": "tap --node-arg=--require=ts-node/register \"src/**/*.spec.ts\" \"src/*.spec.ts\" \"tests/*.spec.ts\" \"tests/**/*.spec.ts\""
   },
   "repository": {
     "type": "git",
@@ -40,18 +40,21 @@
     "shx": "^0.3.2"
   },
   "dependencies": {
-    "@types/blue-tape": "^0.1.33",
     "@types/sinon": "^9.0.0",
     "@types/sinon-test": "^2.4.0",
-    "blue-tape": "^1.0.0",
+    "@types/tap": "^15.0.5",
     "reflect-metadata": "^0.1.13",
     "sinon": "^10.0.0",
-    "sinon-test": "^3.0.0"
+    "sinon-test": "^3.0.0",
+    "tap": "^15.0.9"
   },
   "git": {
     "scripts": {
       "pre-push": "npx git-scripts-pre-push"
     }
+  },
+  "tap": {
+    "check-coverage": false
   },
   "publishConfig": {
     "tag": "next"
