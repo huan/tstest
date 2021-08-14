@@ -1,6 +1,6 @@
 {
   "name": "tstest",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "description": "Testing Utilities for Helping You to Write Better TypeScript Programs",
   "main": "dist/src/mod.js",
   "typings": "dist/src/mod.d.ts",
