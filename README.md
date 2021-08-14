@@ -2,7 +2,7 @@
 
 [![NPM Version](https://badge.fury.io/js/tstest.svg)](https://www.npmjs.com/package/tstest)
 [![npm (tag)](https://img.shields.io/npm/v/tstest/next.svg)](https://www.npmjs.com/package/tstest?activeTab=versions)
-[![Build Status](https://api.travis-ci.com/huan/tstest.svg?branch=master)](https://travis-ci.com/huan/tstest)
+[![NPM](https://github.com/huan/tstest/actions/workflows/npm.yml/badge.svg)](https://github.com/huan/tstest/actions/workflows/npm.yml)
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-blue.svg)](https://www.typescriptlang.org/)
 
 Helps you write better TypeScript programs
