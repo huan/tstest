@@ -4,7 +4,6 @@
 [![npm (tag)](https://img.shields.io/npm/v/tstest/next.svg)](https://www.npmjs.com/package/tstest?activeTab=versions)
 [![Build Status](https://api.travis-ci.com/huan/tstest.svg?branch=master)](https://travis-ci.com/huan/tstest)
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-blue.svg)](https://www.typescriptlang.org/)
-[![Greenkeeper badge](https://badges.greenkeeper.io/huan/tstest.svg)](https://greenkeeper.io/)
 
 Helps you write better TypeScript programs
 
