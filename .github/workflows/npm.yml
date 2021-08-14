@@ -57,12 +57,21 @@ jobs:
     if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/v'))
     name: Publish to NPM
     needs: [build, pack]
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+          # - macos-latest
+          # - windows-latest
+        # node: [10, 11, 12, 13, 14, 15, 16]
+        node: [16]
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - name: Use Node.js ${{ matrix.node }}
+        uses: actions/setup-node@v2
         with:
-          node-version: 16
+          node-version: ${{ matrix.node-version }}
 
       - name: Install Dependencies
         run: npm install
