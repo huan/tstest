@@ -40,7 +40,7 @@
     "shx": "^0.3.2"
   },
   "dependencies": {
-    "@types/sinon": "^9.0.0",
+    "@types/sinon": "^10.0.2",
     "@types/sinon-test": "^2.4.0",
     "@types/tap": "^15.0.5",
     "reflect-metadata": "^0.1.13",
