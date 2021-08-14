@@ -44,7 +44,7 @@
     "@types/sinon-test": "^2.4.0",
     "@types/tap": "^15.0.5",
     "reflect-metadata": "^0.1.13",
-    "sinon": "^10.0.0",
+    "sinon": "^11.1.2",
     "sinon-test": "^3.0.0",
     "tap": "^15.0.9"
   },
