@@ -1,7 +1,13 @@
 #!/usr/bin/env ts-node
 
-import { test } from '../src/mod'
+import {
+  test,
+  VERSION,
+  TsTest,
+  // sinon,
+}               from '../src/mod'
 
 test('test', async t => {
-  t.pass('ok')
+  t.ok(VERSION, 'ok')
+  t.ok(TsTest, 'ok')
 })

@@ -41,20 +41,15 @@
   },
   "dependencies": {
     "@types/sinon": "^10.0.2",
-    "@types/sinon-test": "^2.4.3",
     "@types/tap": "^15.0.5",
     "reflect-metadata": "^0.1.13",
     "sinon": "^11.1.2",
-    "sinon-test": "^3.1.0",
     "tap": "^15.0.9"
   },
   "git": {
     "scripts": {
       "pre-push": "npx git-scripts-pre-push"
     }
-  },
-  "tap": {
-    "check-coverage": false
   },
   "publishConfig": {
     "tag": "next"
