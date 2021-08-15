@@ -1,17 +1,27 @@
 import tap from 'tap'
 
+type TestOptions  = NonNullable<ConstructorParameters<typeof tap.Test>[0]>
+type TestClass    = InstanceType<typeof tap.Test>
+
+interface TestFunc {
+  (name: string,                     cb: (t: TestClass) => Promise<void> | void): void
+  (name: string, extra: TestOptions, cb: (t: TestClass) => Promise<void> | void): void
+}
+
 interface Test {
   (...args: Parameters<typeof tap.test>): void
-  only: (...args: Parameters<typeof tap.only>) => void
-  skip: (...args: Parameters<typeof tap.skip>) => void
+  only: TestFunc
+  skip: TestFunc
+  todo: TestFunc
 }
 
 const test: Test = (...args: Parameters<typeof tap.test>) => {
   void tap.test(...args)
 }
 
-test.only = tap.only
-test.skip = tap.skip
+test.only = tap.only as any
+test.skip = tap.skip as any
+test.todo = tap.todo as any
 
 export {
   test,
