@@ -2,8 +2,8 @@ import tap from 'tap'
 
 interface Test {
   (...args: Parameters<typeof tap.test>): void
-  only: typeof tap.only
-  skip: typeof tap.skip
+  only: (...args: Parameters<typeof tap.only>) => void
+  skip: (...args: Parameters<typeof tap.skip>) => void
 }
 
 const test: Test = (...args: Parameters<typeof tap.test>) => {
