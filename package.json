@@ -1,19 +1,29 @@
 {
   "name": "tstest",
-  "version": "0.5.16",
+  "version": "0.7.0",
   "description": "Testing Utilities for Helping You to Write Better TypeScript Programs",
-  "main": "dist/src/mod.js",
-  "typings": "dist/src/mod.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/src/mod.js",
+      "require": "./dist/cjs/src/mod.js"
+    }
+  },
+  "typings": "./dist/esm/src/mod.d.ts",
+  "engines": {
+    "node": ">=16",
+    "npm": ">=7"
+  },
   "scripts": {
-    "build": "tsc",
     "clean": "shx rm -fr dist/*",
-    "dist": "npm run clean && npm run build",
-    "pack": "npm pack",
-    "lint": "npm run lint:es && npm run lint:ts",
+    "dist": "npm-run-all clean build dist:commonjs",
+    "build": "tsc && tsc -p tsconfig.cjs.json",
+    "dist:commonjs": "jq -n \"{ type: \\\"commonjs\\\" }\" > dist/cjs/package.json",
+    "lint": "npm-run-all lint:es lint:ts",
     "lint:es": "eslint --ignore-pattern tests/fixtures/ '{bin,examples,scripts,src,tests}/**/*.ts'",
-    "lint:ts": "tsc --noEmit",
+    "lint:ts": "tsc --isolatedModules --noEmit",
     "test:pack": "bash -x scripts/npm-pack-testing.sh",
-    "test": "tap --node-arg=--require=ts-node/register \"src/**/*.spec.ts\" \"src/*.spec.ts\" \"tests/*.spec.ts\" \"tests/**/*.spec.ts\""
+    "test": "cross-env NODE_OPTIONS=\"--no-warnings --loader=ts-node/esm\" tap \"src/**/*.spec.ts\" \"tests/**/*.spec.ts\""
   },
   "repository": {
     "type": "git",
@@ -32,10 +42,12 @@
   },
   "homepage": "https://github.com/huan/tstest#readme",
   "devDependencies": {
-    "@chatie/eslint-config": "^0.12.4",
+    "@chatie/eslint-config": "^0.14.1",
     "@chatie/git-scripts": "^0.6.2",
     "@chatie/semver": "^0.4.7",
-    "@chatie/tsconfig": "^0.16.2",
+    "@chatie/tsconfig": "^0.20.2",
+    "cross-env": "^7.0.3",
+    "npm-run-all": "^4.1.5",
     "read-pkg-up": "^7",
     "shx": "^0.3.3"
   },
@@ -51,6 +63,10 @@
       "pre-push": "npx git-scripts-pre-push"
     }
   },
+  "files": [
+    "dist",
+    "src"
+  ],
   "publishConfig": {
     "tag": "next"
   }
