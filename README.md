@@ -67,6 +67,8 @@ This module is highly inspired by [pytest](https://pytest.org/)
 
 1. Upgrade to [tap](https://github.com/tapjs/node-tap) to replace [blue-tape](https://github.com/spion/blue-tape) ([wechayt/wechaty#2223](https://github.com/wechaty/wechaty/pull/2223))
 1. Remove `sinon-test`
+1. Enable ES Modules
+1. Add `AssertEqual` for typing tests
 
 ### v0.4 June 07, 2019
 
