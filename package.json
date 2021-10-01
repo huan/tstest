@@ -1,6 +1,6 @@
 {
   "name": "tstest",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "description": "Testing Utilities for Helping You to Write Better TypeScript Programs",
   "type": "module",
   "exports": {
