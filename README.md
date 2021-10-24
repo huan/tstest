@@ -63,7 +63,9 @@ This module is highly inspired by [pytest](https://pytest.org/)
 
 ## CHANGELOG
 
-### master v0.5
+### master v1.0 (Oct 24, 2021)
+
+Release v1.0 of tstest
 
 1. Upgrade to [tap](https://github.com/tapjs/node-tap) to replace [blue-tape](https://github.com/spion/blue-tape) ([wechayt/wechaty#2223](https://github.com/wechaty/wechaty/pull/2223))
 
