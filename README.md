@@ -68,16 +68,17 @@ This module is highly inspired by [pytest](https://pytest.org/)
 Release v1.0 of tstest
 
 1. Upgrade to [tap](https://github.com/tapjs/node-tap) to replace [blue-tape](https://github.com/spion/blue-tape) ([wechayt/wechaty#2223](https://github.com/wechaty/wechaty/pull/2223))
+1. Remove `sinon-test`
+1. Enable ES Modules
+1. Add `AssertEqual` for typing tests
 
 ### v0.4 June 07, 2019
 
 1. Publish as a testing toolset wrapper for convenience:
     1. `blue-tap`
     1. `sinon`
-    1. `sinon-test`
-    1. `@types/blue-tap` 
+    1. `@types/blue-tap`
     1. `@types/sinon`
-    1. `@types/sinon-test`
 
 ### v0.1 March 21, 2018
 

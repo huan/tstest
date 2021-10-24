@@ -1,7 +1,13 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env -S node --no-warnings --loader ts-node/esm
 
-import { test } from '../src/mod'
+import {
+  test,
+  VERSION,
+  TsTest,
+  // sinon,
+}               from '../src/mod.js'
 
 test('test', async t => {
-  t.pass('ok')
+  t.ok(VERSION, 'ok')
+  t.ok(TsTest, 'ok')
 })
