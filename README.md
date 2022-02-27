@@ -63,7 +63,11 @@ This module is highly inspired by [pytest](https://pytest.org/)
 
 ## CHANGELOG
 
-### master v1.0 (Oct 24, 2021)
+### main v1.1 (Feb 27, 2022)
+
+1. add `testScheduleRunner` helper function to `tstest` module for testing RxJS marble diagrams.
+
+### v1.0 (Oct 24, 2021)
 
 Release v1.0 of tstest
 
