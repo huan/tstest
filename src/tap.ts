@@ -24,5 +24,6 @@ test.skip = tap.skip as any
 test.todo = tap.todo as any
 
 export {
+  type TestClass,
   test,
 }

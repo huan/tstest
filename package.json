@@ -1,6 +1,6 @@
 {
   "name": "tstest",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Testing Utilities for Helping You to Write Better TypeScript Programs",
   "type": "module",
   "exports": {
@@ -42,20 +42,21 @@
   },
   "homepage": "https://github.com/huan/tstest#readme",
   "devDependencies": {
-    "@chatie/eslint-config": "^1.0.2",
+    "@chatie/eslint-config": "^1.0.4",
     "@chatie/git-scripts": "^0.6.2",
     "@chatie/semver": "^0.4.7",
-    "@chatie/tsconfig": "^1.0.2",
+    "@chatie/tsconfig": "^4.6.2",
     "cross-env": "^7.0.3",
     "npm-run-all": "^4.1.5",
-    "shx": "^0.3.3"
+    "shx": "^0.3.4"
   },
   "dependencies": {
-    "@types/sinon": "^10.0.5",
-    "@types/tap": "^15.0.5",
+    "@types/sinon": "^10.0.11",
+    "@types/tap": "^15.0.6",
     "reflect-metadata": "^0.1.13",
-    "sinon": "^11.1.2",
-    "tap": "^15.0.10"
+    "rxjs": "^7.5.4",
+    "sinon": "^13.0.1",
+    "tap": "^15.1.6"
   },
   "git": {
     "scripts": {
