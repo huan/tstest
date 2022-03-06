@@ -63,9 +63,10 @@ This module is highly inspired by [pytest](https://pytest.org/)
 
 ## CHANGELOG
 
-### main v1.1 (Feb 27, 2022)
+### main v1.2 (Mar 6, 2022)
 
 1. add `testScheduleRunner` helper function to `tstest` module for testing RxJS marble diagrams.
+1. upgrade [tap](https://www.npmjs.com/package/tap) to v16. (fix [tapjs/node-tap#791](https://github.com/tapjs/node-tap/issues/791)).
 
 ### v1.0 (Oct 24, 2021)
 
