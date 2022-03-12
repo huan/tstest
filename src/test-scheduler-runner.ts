@@ -12,7 +12,7 @@ const testSchedulerRunner = (callback: (helpers: RunHelpers) => void) => async (
     /**
      * Huan(202203): the test must contains at least one events
      */
-    t.not(actual.length, 'should has at least one marble event in the stream for testing')
+    t.ok(actual.length >= 1, 'should has at least one marble event in the stream for testing')
 
     for (let i = 0; i < actual.length; i++) {
       t.same(actual[i], expected[i], `the marbals of actual is ${actual[i].frame}/${actual[i].notification.kind}:${JSON.stringify(actual[i].notification.value)}`)
