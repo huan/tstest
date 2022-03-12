@@ -29,6 +29,13 @@ TO DO:
 
 This module is highly inspired by [pytest](https://pytest.org/)
 
+## API
+
+1. `test` for containerization testings
+1. `sinon` for mocking everything you need
+1. `AssertEqual` for check TypeScript typings
+1. `testSchedulerRunner` for RxJS marble testing
+
 ## SEE ALSO
 
 * [Testing Python Applications with Pytest](https://semaphoreci.com/community/tutorials/testing-python-applications-with-pytest)
@@ -103,12 +110,12 @@ $ npm deprecate tstest@0.0 'tstest had been republished as a test framework from
 
 ## AUTHOR
 
-[Huan LI (李卓桓)](http://linkedin.com/in/zixia) zixia@zixia.net
+[Huan LI (李卓桓)](http://linkedin.com/in/zixia), [Microsoft Regional Director](https://rd.microsoft.com/en-us/huan-li), <zixia@zixia.net>
 
 [![Profile of Huan LI (李卓桓) on StackOverflow](https://stackexchange.com/users/flair/265499.png)](https://stackexchange.com/users/265499)
 
 ## COPYRIGHT & LICENSE
 
-- Code & Docs © 2019 - now Huan LI zixia@zixia.net
+- Code & Docs © 2019 Huan LI zixia@zixia.net
 - Code released under the Apache-2.0 License
 - Docs released under Creative Commons
