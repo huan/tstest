@@ -11,3 +11,15 @@ test('AssertEqual smoke testing', async (t) => {
 
   t.ok(typeTest, 'should pass the typing test')
 })
+
+/**
+ * Issue #37
+ *  @link https://github.com/huan/tstest/issues/37
+ */
+test('AssertEqual with `never`', async (t) => {
+  type T = never
+  type EXPECTED_TYPE = never
+  const typeTest: AssertEqual<T, EXPECTED_TYPE> = true
+
+  t.ok(typeTest, 'should pass the typing test')
+})

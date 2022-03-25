@@ -6,8 +6,8 @@
  *    https://2ality.com/2019/07/testing-static-types.html
  */
 type AssertEqual<T, Expected> =
-  T extends Expected
-    ? (Expected extends T ? true : never)
+  [T] extends [Expected]
+    ? ([Expected] extends [T] ? true : never)
     : never
 
 export type {
